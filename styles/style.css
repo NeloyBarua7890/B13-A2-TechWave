@@ -111,6 +111,57 @@ nav {
   color: rgba(255, 255, 255, 1);
 }
 
+/* About Podcast Section Styles */
+#podcast-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 3.125rem;
+  padding-inline: 12.5rem;
+  padding-bottom: 7.5rem;
+}
+
+#podcast-section .podcast-description h2 {
+  margin-bottom: 1rem;
+}
+
+#podcast-section .podcast-description p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  opacity: 0.8;
+}
+
+#podcast-section hr {
+  border: none;
+  height: 0.125rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#podcast-section .podcast-states {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#podcast-section .podcast-states h3 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgba(0, 255, 136, 1);
+  margin-bottom: 1rem;
+}
+
+#podcast-section .podcast-states p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.8;
+}
+
 /* Host section styles */
 #host-section {
   max-width: 1200px;
@@ -127,7 +178,7 @@ nav {
 }
 
 #host-section .host-description h3,
-p {
+#host-section .host-description p {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -224,4 +275,5 @@ p {
   font-weight: 400;
   text-align: center;
   opacity: 0.6;
+  color: rgba(255, 255, 255, 1);
 }

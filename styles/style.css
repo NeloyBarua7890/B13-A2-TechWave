@@ -160,18 +160,19 @@ nav {
 
 /* Grid Section Styles */
 #grid-section {
-  max-width: 1360px;
-  margin: 0 auto;
   padding-top: 3.125rem;
   padding-inline: 12.5rem;
   background-color: rgba(35, 14, 61, 1);
 }
 
 #grid-section .grid-container {
+  max-width: 1360px;
+  margin: 0 auto;
   display: grid;
   gap: 1.875rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
+  padding-bottom: 7.5rem;
 }
 
 #grid-section .vertical-layout {
@@ -187,7 +188,6 @@ nav {
 }
 
 #grid-section .grid-container div {
-  border: 2px solid black;
   border-radius: 2.5rem;
   padding: 2.5rem;
   background-color: rgba(53, 17, 101, 0.4);

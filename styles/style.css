@@ -51,13 +51,6 @@
   gap: 0.5rem;
 }
 
-.title-1 {
-  font-size: 3.75rem;
-  font-weight: 800;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-}
-
 .title-2 {
   font-size: 3rem;
   font-weight: 700;
@@ -118,17 +111,21 @@ nav {
   }
 }
 
-.nav-menu-container .nav-menu {
+.nav-menu {
   display: flex;
   gap: 2rem;
   list-style: none;
 }
 
-.nav-menu-container .nav-menu a {
+.nav-menu a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
+}
+
+.nav-menu a:hover {
+  color: #00ff88;
 }
 
 header .hero-section {
@@ -142,7 +139,7 @@ header .hero-section {
   padding-block: 7.5rem;
 }
 
-header .hero-section .microphone-bg {
+.hero-section .microphone-bg {
   background-image: url("../assets/hero-circle.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -153,7 +150,7 @@ header .hero-section .microphone-bg {
   margin-bottom: 2.5rem;
 }
 
-header h2 {
+.hero-section h2 {
   font-size: 3.75rem;
   font-weight: 800;
   color: rgba(255, 255, 255, 1);
@@ -161,7 +158,7 @@ header h2 {
   margin-bottom: 0.5rem;
 }
 
-header p {
+.hero-section p {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
@@ -173,7 +170,6 @@ header p {
 /* About Podcast Section Styles */
 #podcast-section {
   padding-top: 3.125rem;
-  /* padding-inline: 12.5rem; */
   padding-bottom: 7.5rem;
   background-color: rgba(26, 11, 46, 1);
 }
@@ -206,9 +202,15 @@ header p {
 
 #podcast-section .podcast-stats {
   display: flex;
+  flex-wrap: wrap;
   gap: 5rem;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.podcast-stats li {
+  flex: 1 1 200px;
   text-align: center;
+  list-style: none;
 }
 
 .podcast-stats h3 {
@@ -223,10 +225,6 @@ header p {
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   opacity: 0.8;
-}
-
-.podcast-stats li {
-  list-style: none;
 }
 
 /* Grid Section Styles */
@@ -475,4 +473,40 @@ header p {
   text-align: center;
   opacity: 0.6;
   color: rgba(255, 255, 255, 1);
+}
+
+/* Responsive Codes */
+@media screen and (width: 576px) {
+  #podcast-section,
+  #grid-section,
+  #episodes-section,
+  #host-section,
+  #techwave-footer {
+    padding-inline: 1.25rem;
+  }
+
+  .title-2 {
+    font-size: 2rem;
+  }
+  .hero-section h2 {
+    font-size: 2.5rem;
+  }
+  .video-card iframe {
+    aspect-ratio: 4/3;
+  }
+  .podcast-states {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .host-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-social {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

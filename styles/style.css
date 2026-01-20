@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgba(26, 11, 46, 1);
-}
-
 .font-inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -113,7 +109,7 @@ nav {
 
 /* About Podcast Section Styles */
 #podcast-section {
-  max-width: 1200px;
+  max-width: 1360px;
   margin: 0 auto;
   padding-top: 3.125rem;
   padding-inline: 12.5rem;
@@ -162,13 +158,86 @@ nav {
   opacity: 0.8;
 }
 
+/* Grid Section Styles */
+#grid-section {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-top: 3.125rem;
+  padding-inline: 12.5rem;
+  background-color: rgba(35, 14, 61, 1);
+}
+
+#grid-section .grid-container {
+  display: grid;
+  gap: 1.875rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+
+#grid-section .vertical-layout {
+  grid-row: span 2;
+}
+
+#grid-section .horizontal-layout {
+  grid-column: span 2;
+}
+
+#grid-section .small-layout {
+  grid-column: span 1;
+}
+
+#grid-section .grid-container div {
+  border: 2px solid black;
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+  background-color: rgba(53, 17, 101, 0.4);
+}
+
+#grid-section .grid-container img {
+  margin-bottom: 1rem;
+}
+
+#grid-section .grid-container h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+#grid-section .grid-container p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.6;
+}
+
+/* Featured Episodes Section Styles */
+#episodes-section {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 7.5rem 12.5rem;
+}
+
+#episodes-section .video-cards {
+  display: flex;
+  gap: 2rem;
+}
+
+#episodes-section .card-description {
+  padding: 1.5rem;
+  background-color: rgba(37, 13, 68, 1);
+}
+
 /* Host section styles */
 #host-section {
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: rgba(26, 11, 46, 1);
+  padding-bottom: 7.5rem;
 }
 
 #host-section .host-card {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -214,7 +283,12 @@ nav {
   max-width: 1360px;
   margin: 0 auto;
   padding: 7.5rem;
+  background-image: url("../assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 #techwave-footer h1 {
   font-size: 4rem;
   font-weight: 800;
